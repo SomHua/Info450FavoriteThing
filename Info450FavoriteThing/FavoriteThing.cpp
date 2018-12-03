@@ -17,7 +17,6 @@ FavoriteThing::FavoriteThing()
     cdName = "";
     artistName = "";
     yearReleased = 0;
- 
 }
 
 // the next four methods are the get methods for our variables.
@@ -39,7 +38,6 @@ int FavoriteThing::getYearReleased()
     return yearReleased;
 }
 
-
 // ask users to enter their favorite CD
 int FavoriteThing::getUserInfo ()
 
@@ -59,8 +57,6 @@ int FavoriteThing::getUserInfo ()
         cin >> yearReleased;
         return badInput;
     }
-    
-    
     
     return 0;
 }

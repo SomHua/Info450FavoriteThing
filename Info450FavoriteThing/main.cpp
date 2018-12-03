@@ -24,6 +24,7 @@ int main()
     {
         // call the  addCD method from the CDList class 
         cd.addCD();
+        cout << endl; 
         cout << "Would you like another entry?" << endl; 
         cin >>answer;
         cout << endl;
@@ -33,7 +34,6 @@ int main()
     while (answer == 'Y' || answer == 'y');
     
     cd.showList();
-    
     return 0;
 }
 

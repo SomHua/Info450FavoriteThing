@@ -24,13 +24,14 @@ bool CDList::duplication(FavoriteThing cd)
     for (i = 0; i <cdSize; i++)
     {
         
-    if(cd.getTitle()==cdList[i].getTitle() && cd.getArtist()==cdList[i].getArtist())
+        if(cd.getTitle()==cdList[i].getTitle() && cd.getArtist()==cdList[i].getArtist())
         
-        return true;
-        else
-            return false;
+        {
+            return true;
+        }
     }
-    return 0;
+    return false;
+   
 }
 
 // if the new entry isn't a duplication, then add to the list
@@ -46,8 +47,8 @@ int CDList::addCD()
     // if the entry isn't a duplication, then add it to the list 
     else
     {
-    cdList[cdSize] = compareCD;
-    cdSize ++;
+        cdList[cdSize] = compareCD;
+        cdSize ++;
         return 0;
     }
 }
